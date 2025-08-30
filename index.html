@@ -3,83 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <title>Ganpati Pandal</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      overflow-x: hidden;
     }
     header {
-      background: #4CAF50;
-      color: #fff;
-      padding: 1rem;
+      backdrop-filter: blur(15px) saturate(180%);
+      -webkit-backdrop-filter: blur(15px) saturate(180%);
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 1rem;
       text-align: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     nav {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
       margin: 1rem 0;
     }
     nav a {
       text-decoration: none;
-      color: #4CAF50;
-      font-weight: bold;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.15);
+      transition: all 0.3s ease;
     }
     nav a:hover {
-      color: #333;
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
     }
     section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      background-color: rgba(255, 255, 255, 0.12);
+      border-radius: 25px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffdd57;
     }
     footer {
-      background: #333;
-      color: #fff;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 2rem;
+      margin-top: 3rem;
+      backdrop-filter: blur(15px);
+      background-color: rgba(0,0,0,0.5);
+      border-top: 1px solid rgba(255,255,255,0.2);
     }
     .btn {
       display: inline-block;
-      padding: 10px 20px;
-      background: #4CAF50;
+      padding: 12px 25px;
+      background: linear-gradient(135deg, #ff512f, #dd2476);
       color: #fff;
-      border-radius: 5px;
+      border-radius: 30px;
       text-decoration: none;
+      transition: transform 0.3s ease;
     }
     .btn:hover {
-      background: #45a049;
+      transform: scale(1.08);
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      outline: none;
+    }
+    form label {
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
-    <p>A simple responsive HTML site</p>
+    <h1>Ganpati Bappa Morya</h1>
+    <p>Welcome to our Hypermodern Glassmorphic Ganpati Pandal</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
-    <a href="#services">Services</a>
+    <a href="#events">Events</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
-    <h2>About Us</h2>
-    <p>This is a simple website built with HTML and CSS. You can customize it however you like.</p>
+    <h2>About the Pandal</h2>
+    <p>Our Ganpati Pandal blends tradition with futuristic design. Experience devotion in a hypermodern, glassmorphic ambience filled with light, energy, and innovation.</p>
   </section>
 
-  <section id="services">
-    <h2>Our Services</h2>
+  <section id="events">
+    <h2>Upcoming Events</h2>
     <ul>
-      <li>Web Development</li>
-      <li>Design</li>
-      <li>SEO Optimization</li>
+      <li>Aarti & Bhajan Nights</li>
+      <li>Cultural Dance Performances</li>
+      <li>Eco-friendly Workshops</li>
     </ul>
   </section>
 
@@ -87,20 +132,20 @@
     <h2>Contact Us</h2>
     <form>
       <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+      <input type="text" id="name" name="name" required><br>
 
       <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+      <input type="email" id="email" name="email" required><br>
 
       <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br>
 
       <button type="submit" class="btn">Send</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 My Website | All rights reserved</p>
+    <p>&copy; 2025 Ganpati Pandal | Designed with Glassmorphism</p>
   </footer>
 </body>
 </html>
